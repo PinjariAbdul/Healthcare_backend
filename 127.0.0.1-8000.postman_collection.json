@@ -1,0 +1,433 @@
+{
+	"info": {
+		"_postman_id": "6b4f4cca-998d-4055-9e74-5bf949bfce7d",
+		"name": "127.0.0.1:8000",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46282311"
+	},
+	"item": [
+		{
+			"name": "/api/mappings/1/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxMTkxNjI3LCJpYXQiOjE3NTExODcyMTksImp0aSI6ImU1NDhlMzE4MDUxNTRlNmRiOWNmY2E0MDVmMDRhMGZiIiwidXNlcl9pZCI6Nn0.Q0bU_j8Osp6H5DpDs9oXZYqQqPoSBEjYnNWexUQXZQM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/mappings/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mappings",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/mappings/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxMTkxNjI3LCJpYXQiOjE3NTExODcyMTksImp0aSI6ImU1NDhlMzE4MDUxNTRlNmRiOWNmY2E0MDVmMDRhMGZiIiwidXNlcl9pZCI6Nn0.Q0bU_j8Osp6H5DpDs9oXZYqQqPoSBEjYnNWexUQXZQM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/mappings/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mappings",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/mappings/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxMTkxNjI3LCJpYXQiOjE3NTExODcyMTksImp0aSI6ImU1NDhlMzE4MDUxNTRlNmRiOWNmY2E0MDVmMDRhMGZiIiwidXNlcl9pZCI6Nn0.Q0bU_j8Osp6H5DpDs9oXZYqQqPoSBEjYnNWexUQXZQM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"patient\": 1,\r\n  \"doctor\": 1\r\n}\r\n\r\n\r\n\r\n// {\r\n//   \"name\": \"Dr. Alice\",\r\n//   \"specialization\": \"Neurology\"\r\n// }\r\n// {\r\n//     \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MTI3MzYxOSwiaWF0IjoxNzUxMTg3MjE5LCJqdGkiOiJiYzFkMWMyODIwNjc0MzNlYWVkNzZlYzRhYjJmODIxZSIsInVzZXJfaWQiOjZ9.QRTTzvEiCDHNPf2qiwtk6zcPQdBGo0Wm7qSHtaMruT4\"\r\n// }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/mappings/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"mappings",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/auth/token/refresh/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxMTkwODYwLCJpYXQiOjE3NTExODcyMTksImp0aSI6ImRiOTA1NmQzZjJmMDQ5NzliOGZkYWVjZDM5YjljYTEzIiwidXNlcl9pZCI6Nn0.zJc2sT21JEo-ZBi_T7-Z_GHUCKKDWdrbSPkZ33pLJTo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "// {\r\n//   \"patient\": 1,\r\n//   \"doctor\": 1\r\n// }\r\n\r\n\r\n\r\n// {\r\n//   \"name\": \"Dr. Alice\",\r\n//   \"specialization\": \"Neurology\"\r\n// }\r\n{\r\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MTI3MzYxOSwiaWF0IjoxNzUxMTg3MjE5LCJqdGkiOiJiYzFkMWMyODIwNjc0MzNlYWVkNzZlYzRhYjJmODIxZSIsInVzZXJfaWQiOjZ9.QRTTzvEiCDHNPf2qiwtk6zcPQdBGo0Wm7qSHtaMruT4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/token/refresh/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"token",
+						"refresh",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/doctors/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxMTkwODYwLCJpYXQiOjE3NTExODcyMTksImp0aSI6ImRiOTA1NmQzZjJmMDQ5NzliOGZkYWVjZDM5YjljYTEzIiwidXNlcl9pZCI6Nn0.zJc2sT21JEo-ZBi_T7-Z_GHUCKKDWdrbSPkZ33pLJTo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Dr. Alice\",\r\n  \"specialization\": \"Neurology\"\r\n}\r\n// {\r\n//     \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MTI3MzYxOSwiaWF0IjoxNzUxMTg3MjE5LCJqdGkiOiJiYzFkMWMyODIwNjc0MzNlYWVkNzZlYzRhYjJmODIxZSIsInVzZXJfaWQiOjZ9.QRTTzvEiCDHNPf2qiwtk6zcPQdBGo0Wm7qSHtaMruT4\"\r\n// }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/doctors/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"doctors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/doctors/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxMTkwODYwLCJpYXQiOjE3NTExODcyMTksImp0aSI6ImRiOTA1NmQzZjJmMDQ5NzliOGZkYWVjZDM5YjljYTEzIiwidXNlcl9pZCI6Nn0.zJc2sT21JEo-ZBi_T7-Z_GHUCKKDWdrbSPkZ33pLJTo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Dr. Alice\",\r\n  \"specialization\": \"Neurology\"\r\n}\r\n// {\r\n//     \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1MTI3MzYxOSwiaWF0IjoxNzUxMTg3MjE5LCJqdGkiOiJiYzFkMWMyODIwNjc0MzNlYWVkNzZlYzRhYjJmODIxZSIsInVzZXJfaWQiOjZ9.QRTTzvEiCDHNPf2qiwtk6zcPQdBGo0Wm7qSHtaMruT4\"\r\n// }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/doctors/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"doctors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/patients/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxMTkwMzc3LCJpYXQiOjE3NTExODcyMTksImp0aSI6ImM2NDBlMGNhOGM1ZTQ0ZTQ5YmQ4ZTVjODk1MmU5NTA2IiwidXNlcl9pZCI6Nn0.oyO9nSnYnUN5QwehKY_MNL9Gry_ilUlvb4fNyfBX6k4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/patients/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/patients/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxMTkwMzc3LCJpYXQiOjE3NTExODcyMTksImp0aSI6ImM2NDBlMGNhOGM1ZTQ0ZTQ5YmQ4ZTVjODk1MmU5NTA2IiwidXNlcl9pZCI6Nn0.oyO9nSnYnUN5QwehKY_MNL9Gry_ilUlvb4fNyfBX6k4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Alice\",\r\n  \"age\": 25,\r\n  \"disease\": \"Fever\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/patients/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"patients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/auth/login/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxMTg2NjkxLCJpYXQiOjE3NTExODYzOTEsImp0aSI6ImFkYjBlMjUwYThjZDQ0MDI4ZTExODRjNGFiZWI1MDAzIiwidXNlcl9pZCI6NX0.86MnTdvPljSch85PQjYkPcTFayNkahK0J3mm6porsmA",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"ajstyle7@example.com\",\r\n  \"password\": \"Abdul@1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/auth/register/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxMTg2NjkxLCJpYXQiOjE3NTExODYzOTEsImp0aSI6ImFkYjBlMjUwYThjZDQ0MDI4ZTExODRjNGFiZWI1MDAzIiwidXNlcl9pZCI6NX0.86MnTdvPljSch85PQjYkPcTFayNkahK0J3mm6porsmA",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Ajstyle\",\r\n  \"email\": \"ajstyle7@example.com\",\r\n  \"password\": \"Abdul@1234\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/auth/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
