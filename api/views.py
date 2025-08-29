@@ -4,7 +4,8 @@ from .serializers import *
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
-
+from rest_framework.decorators import action
+from rest_framework.response import Response
 class PatientViewSet(viewsets.ModelViewSet):
     serializer_class = PatientSerializer
     permission_classes = [permissions.IsAuthenticated]
@@ -25,12 +26,11 @@ class MappingViewSet(viewsets.ModelViewSet):
     serializer_class = MappingSerializer
     permission_classes = [permissions.IsAuthenticated]
 
-    def get_queryset(self):
-        patient_id = self.kwargs.get('patient_id')
-        if patient_id:
-            return self.queryset.filter(patient_id=patient_id)
-        return self.queryset
-
+    @action(detail=False, methods=['get'], url_path='patients/(?P<patient_id>[^/.]+)')
+    def by_patient(self, request, patient_id=None):
+        mappings = self.queryset.filter(patient_id=patient_id)
+        serializer = self.get_serializer(mappings, many=True)
+        return Response(serializer.data)
 @api_view(['POST'])
 def register(request):
     serializer = RegisterSerializer(data=request.data)
